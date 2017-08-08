@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="zhou.com.loveyou.fragment.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#f0f0f0">
+
+        <ImageView
+            android:id="@+id/right_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/logined" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="LoveYou"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/StyleLine"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_select"
+                android:background="@drawable/my_shape"
+                android:layout_width="220dp"
+                android:layout_height="270dp"
+                android:src="@mipmap/fall_in_love" />
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:background="@drawable/my_verification"
+                >
+                <ImageView
+                    android:id="@+id/iv_her"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/denglu"
+                    />
+                <ImageView
+                    android:layout_below="@id/iv_her"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/iv_birthday"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/denglu"
+                    />
+                <ImageView
+                    android:layout_below="@id/iv_birthday"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/iv_relation"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/denglu"
+                    />
+                <ImageView
+                    android:layout_below="@id/iv_relation"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/iv_edit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/denglu"
+                    />
+                <ImageView
+                    android:layout_below="@id/iv_edit"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/iv_love"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/denglu"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/my_verification"
+                android:text="PASS" />
+
+            <Button
+                android:id="@+id/bt_like"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:background="@drawable/btn_bg"
+                android:text="LIKE" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

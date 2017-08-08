@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    tools:context="zhou.com.loveyou.fragment.MeFragment">
+
+
+    <TextView
+        style="@style/StyleHead"
+        android:text="我"/>
+
+    <TextView style="@style/StyleLine" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/iv_headphoto"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@mipmap/fall_in_love" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/iv_headphoto"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_me_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/iv_headphoto"
+                    android:text="姓名"
+                    android:textColor="#000"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/iv_gender"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@mipmap/female" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="编辑"
+            android:textColor="#000"
+            android:textSize="16sp"
+             />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_safety"
+            android:text="安全管理"
+            style="@style/StyleText"
+            />
+        <TextView style="@style/StyleLine" />
+        <TextView
+            android:id="@+id/tv_privacy"
+            android:text="隐私管理"
+            style="@style/StyleText"
+            />
+        <TextView style="@style/StyleLine" />
+        <TextView
+            android:id="@+id/tv_look_photo"
+            android:text="图片浏览设置"
+            style="@style/StyleText"
+            />
+        <TextView style="@style/StyleLine" />
+        <TextView
+            android:id="@+id/tv_about"
+            android:text="关于"
+            style="@style/StyleText"
+            />
+        <TextView style="@style/StyleLine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+             />
+        <TextView
+            android:id="@+id/tv_new"
+            android:text="新手引导"
+            style="@style/StyleText"
+            />
+        <TextView style="@style/StyleLine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            />
+        <TextView
+            android:id="@+id/tv_log_off"
+            android:text="退出登录"
+            style="@style/StyleText"
+            />
+        <TextView style="@style/StyleLine" />
+    </LinearLayout>
+
+</LinearLayout>
